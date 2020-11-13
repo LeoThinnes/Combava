@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Page évènementiel de Combava, une association basée sur le concept de David's Lemonade">
+  <title>Combava - Évènements</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="logo">
+    <h1>COMBAVA</h1>
+    <div id="home_mobile">
+      <a href="combava.com" target="_blank"><img src="./images/home-24px.svg" alt="Retour site combava"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="https://www.combava.com">A propos de Combava</a></li>
+        <li><a href="#">Nous contacter</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div id="texte_presentation_mobile">
+      <p>Combava et ses producteurs vous proposent de nouvelles dégustations..<br>..même en déplacement</p>
+    </div>
+    <div id="texte_presentation_desktop">
+      <p>Combava et ses producteurs locaux et biologiques vous proposent de nouvelles dégustations privées..<br>..près de chez vous</p>
+    </div>
+    <div id="images_presentations_mobile">
+      <img class="images1" src="images/lemon.jpg" alt="citronnier">
+      <img class="images2" src="images/sliced-lemon-fruit-in-glass-picher.jpg" alt="pichet de citronade">
+    </div>
+    <div id="legende">
+      <p>..d'agrumes sélectionnés et ramassés à la main, provenant de cultures françaises responsables.</p>
+    </div>
+    <div id="evenements">
+      <h2 class="sous-titre">Nos prochains évènements..</h2>
+      <div class="desktop">
+        <div class="element">
+          <iframe src="https://www.google.com/maps/d/embed?mid=1rXPWtSTUXKRL3fSQDR1OZV5e1xndqzPe" width="600" height="555"></iframe>
+        </div>
+        <div class="element">
+          <form class="test" action="index.html" method="post">
+            <div>
+              <p id="title">Inscrivez-vous pour rester informés</p>
+            </div>
+            <label id="nom">
+              Nom :
+              <input required type="text" placeholder=" votre nom">
+            </label>
+            <label id="prenom">
+              Prénom :
+              <input required type="text" placeholder=" votre prénom">
+            </label>
+            <label id="telephone">
+              Téléphone :
+              <input required type="text" placeholder=" 00 00 00 00 00">
+            </label>
+            <label id="email">
+              <br>Email :
+              <input type="email" placeholder=" combava@email.com" required name="user_email" title="Veuillez saisir votre adresse e-mail">
+            </label>
+            <label id="evenement">
+              Évenement choisi :
+              <input required placeholder=" Choisir un évènement de la liste" list="defaultAdress">
+              <datalist id="defaultAdress">
+                <option value="AMAP Poitiers">AMAP les Grand'Goules (3 Rue des Gravières, 86000 Grand Poitiers)</option>
+                <option value="AMAP Civray">AMAP Bio des 2 rives (1 Rue des Écoles, 37150 Civray-de-Touraine)</option>
+                <option value="AMAP La Rochelle">AMAP des Voiliers (21 Avenue du Champ de Mars, 17000 La Rochelle)</option>
+                <option value="Popimambour Pompignac">Le Pompin'Ambour (37 Lotissement Parc de Cadouin, 33370 Pompignac)</option>
+                <option value="AMAP Arpajon">AMAP BIO'RILLAC (27 Rue Antonin Dusserre, 15130 Arpajon-sur-Cère)</option>
+                <option value="AMAP Maringues">AMAP (13 Rue de Chéry, 63350 Maringues)</option>
+                <option value="PenseesBio Biars">Pensees Bio (43 Avenue de la République, 46130 Biars-sur-Cère)</option>
+                <option value="BioSens Montpellier">Bio & Sens Montpellier - Juvignac (C. Cial Les Portes du Soleil, parking aérien, Allée de l'Europe, 34990 Juvignac)</option>
+                <option value="Biossetan Beausset">Biossetan (4 Rue Paul Cézanne, 83330 Le Beausset)</option>
+                <option value="Canopee Besançon">Le Canopée (3 Allée de l'Île aux Moineaux, 25000 Besançon)</option>
+                <option value="Natureo Wintzenheim">Naturéo (37 Rue Herzog Logelbach, 68124 Wintzenheim)</option>
+                <option value="RayonVerts Charleville">Rayons Verts (45 Cours Briand, 08000 Charleville-Mézières)</option>
+                <option value="BioMonde Amiens">BIOMONDE (14 Rue Saint-Patrice, 80000 Amiens)</option>
+                <option value="BioCBon Paris">Bio c'Bon (116 Avenue d'Italie, 75013 Paris)</option>
+                <option value="ComptoirsBio Auxerre">Les Comptoirs de la Bio (4 Avenue de Worms, 89000 Auxerre)</option>
+              </datalist>
+            </label>
+            <label id="accord">
+              Souhaitez-vous être informés des prochains évènements ?
+              <input type="checkbox">
+            </label>
+            <div id="valider">
+              <input type="submit" value="ENVOYER">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="images_presentations_desktop">
+      <h2 class="sous-titre">Ce que vous découvrirez..</h2>
+      <div id="images">
+        <div class="element">
+          <img class="images1" src="images/lemon.jpg" alt="citronnier">
+          <p>..d'agumes séléctionnés et ramassés à la main,<br> provenant de cultures francaises responsables.</p>
+        </div>
+        <div class="element">
+          <img class="images2" src="images/sliced-lemon-fruit-in-glass-picher.jpg" alt="pichet  de citronade">
+          <p>..des citronades de qualité, à la facon de David's <br>Lemonade.</p>
+        </div>
+      </div>
+    </div>
+    <div id="social">
+      <a href="#" target="_blank" rel="noopener noreferrer nofollow"><img src="./images/021-facebook.png" alt="Facebook"></a>
+      <a href="#" target="_blank" rel="noopener noreferrer nofollow"><img src="./images/043-twitter.png" alt="Twitter"></a>
+      <a href="#" target="_blank" rel="noopener noreferrer nofollow"><img src="./images/025-instagram.png" alt="Instagram"></a>
+    </div>
+    <p id="legende_social">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+  </div>
+</body>
+</html>

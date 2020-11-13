@@ -1,0 +1,362 @@
+@font-face {
+  font-family: 'Gloria';
+  src: url(../ressources/GloriaHallelujah-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gloria';
+}
+
+.container {
+  background-image: url(../images/fond_mobile.png);
+  background-repeat: repeat-y;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+}
+
+header img {
+  height: 70px;
+  align-self: center;
+  margin-right: 20px;
+}
+
+header h1 {
+  font-size: 50px;
+}
+
+#home_mobile {
+  position: absolute;
+  right: 5px;
+  top: 40px;
+}
+
+nav {
+  display: none;
+}
+
+.container {
+  padding-top: 50px;
+}
+
+#texte_presentation_mobile {
+  text-align: center;
+  font-size: 60px;
+  line-height: 80px;
+  margin-bottom: 250px;
+  margin-top: 50px;
+}
+
+#texte_presentation_desktop {
+  display: none;
+}
+
+#images_presentations_mobile {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  justify-content: center;
+}
+
+#images_presentations_mobile img {
+  width: 430px;
+  height: 330px;
+  border: 2px solid black;
+  margin-bottom: 50px;
+}
+
+.images1 {
+  display: flex;
+  margin: auto;
+}
+
+.images2{
+  display: flex;
+  margin: auto;
+}
+
+#legende {
+  margin: 10px 80px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+#desktop_evenenemts {
+  display: flex;
+  flex-direction: row;
+}
+
+#evenements {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.sous-titre {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+iframe {
+  display: none;
+}
+
+form {
+  width: 550px;
+  border: 2px solid black;
+  border-radius: 5%;
+  padding: 10px;
+  background-color: rgb(255, 217, 0,0.5);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form #title {
+  width: 550px;
+  text-align: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+form div {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+form label {
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+form #nom input {
+  width: 410px;
+}
+
+form #prenom input {
+  width: 380px;
+}
+
+form #telephone input {
+  width: 358px;
+}
+
+form #email input {
+  width: 404px;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid:focus {
+  border-color: green;
+}
+
+form #evenement input {
+  width: 290px;
+}
+
+form #valider {
+  margin-top: 60px;
+  text-align: center;
+  padding: 10px;
+}
+
+form #valider input {
+  width: 90px;
+  border-radius: 5px;
+}
+
+#images_presentations_desktop {
+  display: none;
+}
+
+#social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+#social img {
+  width: 50px;
+}
+
+#social a {
+  margin-right: 20px;
+}
+
+#social a:last-child {
+  margin-right: 0;
+}
+
+#legende_social {
+  text-align: center;
+  font-size: 10px;
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+  header {
+    justify-content: start;
+    padding-left: 100px;
+  }
+
+  header h1 {
+    font-size: 60px;
+  }
+
+  #home_mobile {
+    display: none;
+  }
+
+  nav {
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    top: 60px;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+  }
+
+  nav li:last-child {
+    margin-right: 0
+  }
+
+  nav li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .container {
+    background-image: url(../images/background.jpg);
+    background-size: 100%;
+    background-repeat: repeat-y;
+    margin: 0 auto;
+    width: auto;
+    max-width: 1820px;
+  }
+
+  #texte_presentation_mobile {
+    display: none;
+  }
+
+  #texte_presentation_desktop {
+    margin: 0px;
+    display: block;
+    font-size: 60px;
+    text-align: center;
+    height: 800px;
+  }
+
+  #images_presentations_mobile {
+    display: none;
+  }
+
+  #legende {
+    display: none;
+  }
+
+  #evenements {
+    display: block;
+    text-align: center;
+    height: 700px;
+  }
+
+  #evenements iframe {
+    display: block;
+    border: 2px solid black;
+    border-radius: 5%;
+  }
+
+  #evenements .desktop {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  #evenements .element {
+    margin-left: 75px;
+  }
+
+  #evenements .element:last-child {
+    margin-left: 0px;
+  }
+
+  #images_presentations_desktop {
+    display: block;
+    text-align: center;
+    height: 700px;
+  }
+
+  #images_presentations_desktop #images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+
+  #images .element {
+    margin-right: 75px;
+  }
+
+  #images .element:last-child {
+    margin-right: 0px;
+  }
+
+  #images_presentations_desktop h2 {
+    margin-top: 300px;
+  }
+
+  #images_presentations_desktop img {
+    width: 500px;
+    border: 2px solid black;
+  }
+
+  #images_presentations_desktop p {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (min-width: 1820px) {
+  .container {
+    margin: 0 auto;
+    width: auto;
+    max-width: none;
+  }
+}
+
+@media only screen and (min-width: 2100px) {
+
+  #texte_presentation_desktop {
+    height: 30%;
+  }
+
+  #evenements {
+    height: 30%;
+  }
+
+  #images_presentations_desktop {
+    height: 30%;
+  }
+
+}
