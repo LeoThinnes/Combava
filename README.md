@@ -10,3 +10,7 @@ Ce projet avait des contraintes imposées comme :
 
 Ce travail a été réalisé avec [@Benjamin-Pelaudeix](https://github.com/Benjamin-Pelaudeix) et [@jeanlrnt](https://github.com/jeanlrnt)
 
+
+Voici un apperçu du visuel : </br>
+![](/images/combava-accueil.png)
+![](/images/combava-formulaire.png)
